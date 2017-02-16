@@ -43,7 +43,7 @@ Here's a list of currently-supported options:
   - `strip` - Strip all HTML (equivalent to `'safe' => true`)
   - `allow` - Allow all HTML input as-is (default value; equivalent to `'safe' => false)
   - `escape` - Escape all HTML
-* `allow_unsafe_links` - Remove risky link and image URLs by setting this to `false` (default: `true`)
+* `allow_unsafe_links` - Remove risky link and image URLs (`javascript:`, `vbscript:`, `file:` and `data:` except `data:image/(png|jpg|gif|webp)`) by setting this to `false` (default: `true`)
 
 The following options have been deprecated.  They will no longer work once 1.0.0 is released:
 
